@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_Reg_User"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Registrar Usuario" />
+        <item
+            android:id="@+id/nav_Cons_User"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Consultar Usuario" />
+        <item
+            android:id="@+id/nav_ListUser"
+            android:icon="@drawable/ic_list_24dp"
+            android:title="Consultar Lista de Usuarios" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Desarrollador"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Desarrollador" />
+        </menu>
+    </item>
+
+</menu>
