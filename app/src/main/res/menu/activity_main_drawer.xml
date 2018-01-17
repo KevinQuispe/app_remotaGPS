@@ -4,8 +4,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_Inicio"
-            android:icon="@drawable/ic_home_black_24dp"
-            android:title="Inicio" />
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Mis Visitas" />
         <item
             android:id="@+id/nav_Reg_User"
             android:icon="@drawable/ic_person_black_24dp"
@@ -18,6 +18,10 @@
             android:id="@+id/nav_ListUser"
             android:icon="@drawable/ic_list_24dp"
             android:title="Consultar Lista de Usuarios" />
+        <item
+            android:id="@+id/nav_Listfavoritos"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Lugares Favoritos " />
 
     </group>
 
@@ -27,6 +31,10 @@
                 android:id="@+id/nav_Desarrollador"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Desarrollador" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Salir" />
         </menu>
     </item>
 

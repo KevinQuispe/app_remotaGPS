@@ -3,22 +3,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/fab_margin"
     tools:context="com.example.jesus.bdremota.Fragmentos.BienvenidoFrag">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:padding="@dimen/fab_margin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/home"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnubicame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Ubicame"
+                android:textColor="#eeeeee" />
+
+            <include
+                layout="@layout/activity_maps"
+                android:layout_width="match_parent"
+                android:layout_height="266dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#eeee"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="DATOS DEL LUGAR"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#d1c4e9"
+                    android:hint="Direccion"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#d1c4e9"
+                    android:hint="Ciudad"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/lblRateMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate me"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="4"
+                    android:rating="1"
+                    android:stepSize="1.0" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bntenviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorboton"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="AGREGAR A FAVORITO"
+                android:textColor="#eeee" />
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

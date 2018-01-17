@@ -3,4 +3,6 @@
     <color name="colorPrimary">#ba0f18</color>
     <color name="colorPrimaryDark">#dc1129</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorboton">#ff9800 </color>
+    <color name="lugares">#eeeeee</color>
 </resources>
