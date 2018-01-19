@@ -27,7 +27,7 @@ import com.example.jesus.bdremota.Interfaces.iFragments;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, iFragments {
     //botton gps
-    private Button ubicame;
+    Button ubicame;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //call
-
     }
 
     @Override

@@ -10,17 +10,10 @@
             android:id="@+id/nav_Reg_User"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="Registrar Usuario" />
-        <item
-            android:id="@+id/nav_Cons_User"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="Consultar Usuario" />
-        <item
-            android:id="@+id/nav_ListUser"
-            android:icon="@drawable/ic_list_24dp"
-            android:title="Consultar Lista de Usuarios" />
+
         <item
             android:id="@+id/nav_Listfavoritos"
-            android:icon="@drawable/ic_place_black_24dp"
+            android:icon="@drawable/ic_place_black_red"
             android:title="Lugares Favoritos " />
 
     </group>
@@ -28,8 +21,16 @@
     <item android:title="Communicate">
         <menu>
             <item
+                android:id="@+id/nav_ListUser"
+                android:icon="@drawable/ic_list_24dp"
+                android:title="Listar Usuarios" />
+            <item
+                android:id="@+id/nav_Cons_User"
+                android:icon="@drawable/ic_list_24dp"
+                android:title="Consultar Por Usuario" />
+            <item
                 android:id="@+id/nav_Desarrollador"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_person_black_24dp"
                 android:title="Desarrollador" />
             <item
                 android:id="@+id/nav_salir"

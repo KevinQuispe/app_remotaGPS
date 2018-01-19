@@ -5,9 +5,9 @@
     tools:context="com.example.jesus.bdremota.Fragmentos.DesarrolladorFrag">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:src="@drawable/dev"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Eyler Cruz" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>
