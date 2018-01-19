@@ -10,7 +10,7 @@ import com.example.jesus.bdremota.Fragmentos.RegistrarUsuarioFrag;
  * Created by jesus on 4/12/2017.
  */
 
-public interface iFragments extends BienvenidoFrag.OnFragmentInteractionListener,ConsultarListaUsuariosFrag.OnFragmentInteractionListener
+public interface iFragments extends  BienvenidoFrag.OnFragmentInteractionListener,ConsultarListaUsuariosFrag.OnFragmentInteractionListener
     ,ConsultarUsuarioFrag.OnFragmentInteractionListener,DesarrolladorFrag.OnFragmentInteractionListener,RegistrarUsuarioFrag.OnFragmentInteractionListener{
 
 }

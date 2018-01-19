@@ -6,10 +6,6 @@
             android:id="@+id/nav_Inicio"
             android:icon="@drawable/ic_place_black_24dp"
             android:title="Mis Visitas" />
-        <item
-            android:id="@+id/nav_Reg_User"
-            android:icon="@drawable/ic_person_black_24dp"
-            android:title="Registrar Usuario" />
 
         <item
             android:id="@+id/nav_Listfavoritos"
@@ -28,6 +24,10 @@
                 android:id="@+id/nav_Cons_User"
                 android:icon="@drawable/ic_list_24dp"
                 android:title="Consultar Por Usuario" />
+            <item
+                android:id="@+id/nav_lugaresvisitados"
+                android:icon="@drawable/ic_list_24dp"
+                android:title="Listar Rutas" />
             <item
                 android:id="@+id/nav_Desarrollador"
                 android:icon="@drawable/ic_person_black_24dp"

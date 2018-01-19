@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -43,7 +44,17 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //call
+        ubicame=(Button) findViewById(R.id.btnubicame);
+       // ubicame.setOnClickListener(new View.OnClickListener() {
+
+         //   @Override
+           // public void onClick(View view) {
+                //BienvenidoFrag b=new BienvenidoFrag();
+               // FragmentTransaction transaction= getSupportFragmentManager().beginTransaction();
+                //transaction.replace(R.id.contenedorFragment,b);
+                //transaction.commit();
+            //}
+        //});
     }
 
     @Override
@@ -72,7 +83,12 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new RegistrarUsuarioFrag()).commit();
             return true;
+
+        }
+        if (id == R.id.action_salir) {
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -86,13 +102,14 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_Inicio) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new BienvenidoFrag()).commit();
-        } else if (id == R.id.nav_Reg_User) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new RegistrarUsuarioFrag()).commit();
-        } else if (id == R.id.nav_Cons_User) {
+        }
+        else if (id == R.id.nav_Cons_User) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new ConsultarUsuarioFrag()).commit();
-        }else if (id == R.id.nav_ListUser) {
+        }
+        else if (id == R.id.nav_ListUser) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new ConsultarListaUsuariosFrag()).commit();
-        } else if (id == R.id.nav_Desarrollador) {
+        }
+        else if (id == R.id.nav_Desarrollador) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new DesarrolladorFrag()).commit();
         }
 
