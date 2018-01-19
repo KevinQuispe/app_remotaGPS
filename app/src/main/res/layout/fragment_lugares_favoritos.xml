@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jesus.bdremota.Fragmentos.LugaresFavoritos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/activity_lugares_favoritos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

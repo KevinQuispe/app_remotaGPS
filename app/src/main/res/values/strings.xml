@@ -7,5 +7,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Activa GPS</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_visitas">Map</string>
+    <string name="title_activity_lugares_favoritos">Map</string>
 
 </resources>

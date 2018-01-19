@@ -22,6 +22,7 @@ import com.example.jesus.bdremota.Fragmentos.BienvenidoFrag;
 import com.example.jesus.bdremota.Fragmentos.ConsultarListaUsuariosFrag;
 import com.example.jesus.bdremota.Fragmentos.ConsultarUsuarioFrag;
 import com.example.jesus.bdremota.Fragmentos.DesarrolladorFrag;
+import com.example.jesus.bdremota.Fragmentos.LugaresFavoritos;
 import com.example.jesus.bdremota.Fragmentos.RegistrarUsuarioFrag;
 import com.example.jesus.bdremota.Interfaces.iFragments;
 
@@ -85,7 +86,6 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new RegistrarUsuarioFrag()).commit();
             return true;
-
         }
         if (id == R.id.action_salir) {
 
@@ -102,6 +102,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_Inicio) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new BienvenidoFrag()).commit();
+        }
+        else if (id == R.id.nav_Listfavoritos) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new LugaresFavoritos()).commit();
         }
         else if (id == R.id.nav_Cons_User) {
             getSupportFragmentManager().beginTransaction().replace(R.id.contenedorFragment, new ConsultarUsuarioFrag()).commit();
